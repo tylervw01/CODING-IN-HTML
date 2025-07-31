@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS LAB</title>
+</head>
+<body>
+    <header>FORMS - BEYOND THE BASICS</header>
+    <h1>ENHANCING HTML FORMS</h1>
+    <h2>Scenario</h2>
+    <p>
+In this task, you will practice integrating additional form elements like  textarea, select, button, and fieldset. These elements are crucial for creating more complex forms that require varied inputs and structured layouts.
+</p>
+    <!--INPUT FIELDS FOR NAME AND EMAIL-->
+    <label for="name">
+        <input type="text" id="name" name="name">
+    </label>
+    <br><br>
+    <label for="email">
+        <input type="text" id="email" name="email">
+    </label>
+
+    <br><br>
+
+    <!--TEXTAREA ELEMENT-->
+    <textarea name="message" id="message" rows="4" cols="50">Message...</textarea>
+
+    <br><br>
+    
+    <!--SELECT DROPDOWN MENU-->
+    <label for="department">Department:</label>    
+        <select name="department" id="department">
+        <option value="">Sales</option>
+        <option value="">Support</option>
+        <option value="">General</option>
+    </select>
+
+    <br><br>
+
+    <!--BUTTON ELEMENT-->
+    <button onclick="alert('SUBMITTED!')">Submit</button>
+    <button onclick="alert('REST!')">Reset</button>
+
+    <br><br>
+
+    <!--FIELDSET GROUPING-->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>  
+            <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+        <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        <br><br>
+        <label for="city">City :</label>
+            <input type="text" name="city" id="city">
+            <br>
+        <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+        <br>
+        <label for="zip-code">ZIPCode:</label>
+            <input type="text" id="zip-code" name="zip-code">
+        <br><br>
+        <button onclick="alert('Submitted')">Submit</button>
+        <button onclick="alert('Reset')">Reset</button>
+    </fieldset>
+</body>
+</html>
