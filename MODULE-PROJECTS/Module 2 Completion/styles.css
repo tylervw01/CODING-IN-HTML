@@ -1,0 +1,59 @@
+body {
+    background-color: wheat;
+}
+
+nav {
+    background-color: burlywood;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    position: flex;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 80px;
+    font-size: 20px;
+} 
+ 
+nav li:hover {
+    color: red;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+nav li a:visited {
+    color: purple;
+}
+
+nav li a:active {
+    color: green;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+footer {
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
