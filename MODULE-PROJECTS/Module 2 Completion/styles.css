@@ -56,33 +56,33 @@ h1 {
 
 h2 {
     color: darkgreen;
-    text-align: ;
+    text-align: center;
 }
 
 h3 {
     color: darkgreen;
-    text-align: ;
+    text-align:left;
 }
 
 p {
     color: darkgreen;
-    text-align: ;
+    text-align:left ;
 }
 
 ul {
     color: darkgreen;
-    text-align: ;
+    text-align:left;
 }
 
 ol {
     color: darkgreen;
-    text-align: ;
+    text-align:left;
 }
 
 li {
     color: darkgreen;
-    text-align: ;
-}
+    text-align:left;
+}   
 
 
 img {
