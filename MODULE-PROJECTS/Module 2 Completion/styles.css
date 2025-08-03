@@ -2,6 +2,12 @@ body {
     background-color: wheat;
 }
 
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 nav {
     background-color: burlywood;
     color: black;
@@ -47,6 +53,46 @@ h1 {
     color: darkgreen;
     text-align: center;
 }
+
+h2 {
+    color: darkgreen;
+    text-align: ;
+}
+
+h3 {
+    color: darkgreen;
+    text-align: ;
+}
+
+p {
+    color: darkgreen;
+    text-align: ;
+}
+
+ul {
+    color: darkgreen;
+    text-align: ;
+}
+
+ol {
+    color: darkgreen;
+    text-align: ;
+}
+
+li {
+    color: darkgreen;
+    text-align: ;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+
 
 footer {
     background-color: burlywood;
