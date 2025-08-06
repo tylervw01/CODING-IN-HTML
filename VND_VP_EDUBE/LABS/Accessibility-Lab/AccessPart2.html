@@ -23,18 +23,37 @@
         <h1>ENHANCING ACCESSIBILITY WITH ARIA</h1>
 
     </header>
-    <!--
-    <main><hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vitae adipisci obcaecati sint facilis optio nobis inventore quasi saepe. Veniam similique, repellendus eveniet facilis expedita iusto doloremque quis adipisci excepturi?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero est nemo aspernatur quibusdam. Dolorum quasi illo hic fugiat aliquam dignissimos? Harum incidunt modi aliquid ipsam delectus sint commodi porro? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat id earum officia? Voluptatem sint porro optio necessitatibus id dolor officiis soluta, facere adipisci accusamus, recusandae minus quisquam similique doloribus fuga.
-        </p>
 
-        <img src="/resources/media/photo-of-me-5-3.jpg" alt="A photo of me starting my coding journey"> 
-        <a href="AccessPart2.html" target="_blank">Read more about me</a>
-    </main><hr>
--->
     <footer><hr>
         <p>Copyright © 2024 My Personal Blog. All Rights Reserved.</p>
     </footer><hr>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessible Web Application</title>
+</head>
+<body>
+    <div role="button" aria-disabled="true">[Button]</div>
+    <div role="navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <main role="main">
+        <p>Welcome to our website. Explore our services and contact us.</p>
+    </main>
+    <div>
+        <button onclick="toggleMenu()" aria-expanded="false">Toggle Menu</button>
+        <ul>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </div>
+    <div aria-hidden="true">This promotional content is not currently relevant.</div>
 </body>
 </html>
