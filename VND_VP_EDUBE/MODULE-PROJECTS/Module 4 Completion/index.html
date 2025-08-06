@@ -14,11 +14,13 @@
         }
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
         }
         #mission-statement {
             color: #32CD32;
         }
-        .upcoming-events {
+        #upcoming-events {
+            background-color:FFFFE0;
             color: #FFA07A;
         }
         .contact-us {
@@ -27,28 +29,39 @@
         nav {
         background-color: green;
         color: #fff;
-        padding: 25px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 20px;
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
         }
          nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 7px;
         }  
         nav li {
-        margin-right: 150px;
-        }
-  
+        margin-right: 220px;
+        }    
         nav a {
         color: #fff;
         text-decoration: none;
-        }
-  
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        }  
         nav a:hover {
+        color: #FFA07A;
         text-decoration: underline;
+        }
+        .footer {
+            background-color: #3aa824;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #000000;
         }
     </style>
 </head>
@@ -70,8 +83,9 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque sint optio saepe? Dolore iure repellat officiis excepturi quas tempora consequatur delectus fugiat repudiandae, deleniti at, dolor, officia in pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis explicabo, unde deserunt minima aperiam optio hic sapiente earum delectus quos nesciunt deleniti odio illo saepe repellat ut reprehenderit vitae.</p>
 </header><hr>
 
-<h2 class="upcoming-events">Upcoming Events</h2>
-<hr>
+<!--3. EMPHASIZE UPCOMING EVENT DATES-->
+<h2 id="upcoming-events">Upcoming Events</h2>
+
 <ul>
     <li>Science Fair - <span style="font-weight:bold; color:red">June 10</span></li>
     <li class="outdoor" title="Event Type: Outdoor">Art Exhibition - 
@@ -79,13 +93,26 @@
     </li>
     <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">Sports Day - <span style="font-weight:bold; color:red">June 20</span></li>
 </ul>
+<br><hr>
 
+<!--4. MAKE CONTACT INFORMATION INTERACTIVE-->
 <div class="section">
 <h2 class="contact-us">Contact Us</h2>
+
 <p title="Email us at info@sunnydaleschool.com">Email: info@sunnydaleschool.com</p>
 <p title="Call us at 555-1234">Phone: 555-1234</p>
-Imagine clicking here shows a message: 'Thanks for reaching out!'
+
+<button onclick="alert('Thanks for reaching out!')">Imagine clicking here shows a message:</button>
 </div>
+
 </main>
+<br><br>
+
+<!--FOOTER-->
+<section class="footer">
+    <footer>
+        <p>@TYLERVANWYK. All rights reserved</p>
+    </footer>
+</section>
 </body>
 </html>
