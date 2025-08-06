@@ -21,19 +21,57 @@
         .upcoming-events {
             color: #FFA07A;
         }
-        .contact-us
+        .contact-us {
+            color:#20B2AA;
+        }
+        nav {
+        background-color: green;
+        color: #fff;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+         nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }  
+        nav li {
+        margin-right: 150px;
+        }
+  
+        nav a {
+        color: #fff;
+        text-decoration: none;
+        }
+  
+        nav a:hover {
+        text-decoration: underline;
+        }
     </style>
 </head>
-
 <body>
-<header>
-<h1 style="text-align: center">Sunnydale School</h1><hr>
+    <main>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>    
+        </nav>
+        <h1 style="text-align: center">Sunnydale School</h1><hr>
+
 <p style="text-align:center">Welcome to Sunnydale School, dedicated to fostering a love of learning in every student.</p>
     
-<h2 id="mission-statement">Mission Statement</h2>
-<p>Our mission is to provide a quality education that prepares all children for a successful future.</p>
+<h2 id="mission-statement"><u>Mission Statement:</u></h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque sint optio saepe? Dolore iure repellat officiis excepturi quas tempora consequatur delectus fugiat repudiandae, deleniti at, dolor, officia in pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis explicabo, unde deserunt minima aperiam optio hic sapiente earum delectus quos nesciunt deleniti odio illo saepe repellat ut reprehenderit vitae.</p>
 </header><hr>
+
 <h2 class="upcoming-events">Upcoming Events</h2>
+<hr>
 <ul>
     <li>Science Fair - <span style="font-weight:bold; color:red">June 10</span></li>
     <li class="outdoor" title="Event Type: Outdoor">Art Exhibition - 
@@ -43,11 +81,11 @@
 </ul>
 
 <div class="section">
-<h2 class="contact">Contact Us</h2>
+<h2 class="contact-us">Contact Us</h2>
 <p title="Email us at info@sunnydaleschool.com">Email: info@sunnydaleschool.com</p>
 <p title="Call us at 555-1234">Phone: 555-1234</p>
 Imagine clicking here shows a message: 'Thanks for reaching out!'
 </div>
-
+</main>
 </body>
 </html>
