@@ -11,12 +11,50 @@
             text-align: center; /* Centers inline or inline-block content within the div */
             padding: 10px; /* Adds padding around the content inside the div */
         }
+        header {
+            background-color: #4d739a;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #345b81;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="center-and-space-content">
-            <img src="/resources/media/logo.jpg" alt="Harbor Light Community Center Logo">
+            <a href="index.html">
+            <img src="logo.png" alt="Harbor Light Community Center Logo">
+            </a>
             <p>Welcome to Harbor Light Community Center</p>
         </div>
     </header>
@@ -32,34 +70,46 @@
 
     <!-- Decorative banner marked to be ignored by screen readers -->
     <div class="banner">
-        <img src="decorative-banner.jpg" alt="" aria-hidden="true">
+        <img src="banner3.png" alt="" aria-hidden="true" width="300">
     </div>
 
     <main>
+<hr>
         <section id="about">
             <h2>About Us</h2>
+
             <p>The Harbor Light Community Center has been at the heart of our community for over 30 years, offering a wide range of services and programs designed to support and enrich the lives of our residents.</p>
-            <p><img src="/resources/media/community-center.jpg" alt="Community Center People"></p>
+
+            <p><img src="com-center.jpeg" alt="Community Center People" width="500"></p>
         </section>
 
         <section id="services">
             <h2>Our Services</h2>
+
             <p>From educational workshops and sports leagues to wellness programs and art classes, our services are tailored to meet the diverse needs of our community members.</p>
         </section>
 
         <section id="events" itemscope itemtype="http://schema.org/Event">
             <h2>Join Our Events</h2>
+
             <p itemprop="description">Our community center is a hub of activity, hosting events throughout the year. Don't miss our annual summer festival for fun, food, and festivities for all ages.</p>
+            
             <p><strong>Annual Summer Festival:</strong> <br>
-               Starts: <time itemprop="startDate" datetime="2050-07-20">July 20, 2050</time>
+               Starts: <time itemprop="startDate" datetime="2025-08-05">August 5, 2025</time>
             </p>
         </section>
+<hr>
     </main>
 
     <footer>
         <h2 id="contact">Contact Us</h2>
-        <p>Have questions or want to get involved? Email us at <a href="mailto:info@harborlight.com">info@harborlight.com</a>.</p>
+
+        <p>Have questions or want to get involved? Email us at 
+        <a href="mailto:info@harborlight.com">info@harborlight.com</a>.
+        </p>
+
         <p>&copy; 2050 Harbor Light Community Center</p>
     </footer>
+<hr>
 </body>
 </html>
