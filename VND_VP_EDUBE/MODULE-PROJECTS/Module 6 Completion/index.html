@@ -8,17 +8,80 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script src="script.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      header {
+        background-color: white;
+        color: black;
+        padding: 10px 0;
+        text-align: center;
+      }
+      main {
+        margin: 20px 0;
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        background-color:green;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+      section {
+        margin: 20px 0;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 40px 0;
+        background-color: white;
+        color: green;
+      }
+    </style>
 </head>
     <body>
+      <header>
+        <h1>&#x1F310 PLANET EARTH &#x1F310</h1><hr>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </nav>
+      </header><hr>
+
+<main>
+  <section>
         <h1>THIS IS OUR PLANET &#x1F30D</h1> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi nulla dolorem iste a nostrum alias cum voluptas ipsa vel cumque esse quos recusandae ipsum odit, voluptatem quisquam earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempora commodi maxime necessitatibus autem, libero error distinctio odio iusto quidem quisquam nemo ullam ipsa repellendus repudiandae nihil eos magnam corrupti.  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi nulla dolorem iste a nostrum alias cum voluptas ipsa vel cumque esse quos recusandae ipsum odit, voluptatem quisquam earum enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempora commodi maxime necessitatibus autem, libero error distinctio odio iusto quidem quisquam nemo ullam ipsa repellendus repudiandae nihil eos magnam corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ab? Nemo quasi cumque ipsum voluptate quia iusto atque inventore officia ducimus labore, illo similique nulla hic, consectetur optio aut voluptatum.
             </p>
-    
+    </section>
+    <hr>
+    <section>
     <button id="discoverLocation" button-align="center">MY LOCATION</button>
     <br><br>
-    <img src="continents.jpg" usemap="#image-map" alt="World Map" width="500">
+    <img src="continents.jpg" usemap="#image-map" alt="World Map" width="1000" height="600" style="padding: 80px;">
+    
     <map name="image-map">
-        
         <area target="" alt="North America" title="North America" id="north-america" coords="386,283,41,17" shape="rect" href="javascript:void(0);">
         <area target="" alt="South America" title="South America" id="south-america" coords="209,501,358,288" shape="rect" href="javascript:void(0);">
         <area target="" alt="Europe" title="Europe" id="europe" coords="391,68,505,217" shape="rect" href="javascript:void(0);">
@@ -26,6 +89,17 @@
         <area target="" alt="Asia" title="Asia" id="asia" coords="893,153,506,1" shape="rect" href="javascript:void(0);">
         <area target="" alt="Australia and Oceania" title="Australia and Oceania" id="australia-and-oceania" coords="679,353,872,480" shape="rect" href="javascript:void(0);">
     </map>
+    </section>
+  
+</main>
+
+<br><hr>
+<div>
+  <footer>
+    <p>&copy; 2025 Discover Your world under the guidance of our beautiful continental map. All rights reserved.</p>
+  </footer>
+</div>
+<br><hr>
 
 </body>
 </html>
