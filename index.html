@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CODING-IN-HTML</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      (function initTheme() {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        const theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
   </head>
   <body>
     <header>
       <h1>CODING-IN-HTML</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="#">LABS</a></li>
+          <li><a href="#">PROJECTS</a></li>
         </ul>
       </nav>
+      <button id="theme-toggle">
+        🌞 THEME 🌙<span class="sr-only"></span>
+      </button>
     </header>
 
     <main>
@@ -29,7 +43,10 @@
         <!-- <button type="button" onclick="alert('Hello, World!')"        >
           Click Me
         </button> -->
-        <button type="button" onclick="location.href='/Z-Cheat Sheet/HTMLCheatSheet.html'">
+        <button
+          type="button"
+          onclick="location.href='/Z-Cheat Sheet/HTMLCheatSheet.html'"
+        >
           CHEAT-SHEET
         </button>
       </section>
