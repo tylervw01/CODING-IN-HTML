@@ -54,3 +54,29 @@ if ("IntersectionObserver" in window) {
   });
   images.forEach((img) => imageObserver.observe(img));
 }
+
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const url = contactForm.action; // Formspree endpoint
+    const formData = new FormData(contactForm);
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        alert("Thanks — your message was sent.");
+        contactForm.reset();
+        // optional redirect: window.location.href = 'thankyou.html';
+      } else {
+        const data = await res.json();
+        alert(data.error || "Submission failed.");
+      }
+    } catch (err) {
+      alert("Network error. Try again later.");
+    }
+  });
+}

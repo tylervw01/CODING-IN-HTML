@@ -25,7 +25,21 @@
         </h1>
         <p>Have questions about our plants? We'd love to hear from you!</p>
 
-        <form class="contact-form" action="#" method="POST">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xgvgzvql"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New contact form submission"
+          />
+          <!-- optional: redirect after submit -->
+          <input type="hidden" name="_next" value="index.html" />
+          <!-- include _replyto so Formspree can use the sender email -->
+          <input type="hidden" name="_replyto" value="" />
+          
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
