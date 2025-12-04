@@ -11,9 +11,11 @@
 
   // ADD ACTIVE CLASS TO CURRENT NAV LINK
   window.addEventListener("load", function () {
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const currentPage =
+      window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach((link) => {
-      if (link.getAttribute("href") === currentPage) link.classList.add("active");
+      if (link.getAttribute("href") === currentPage)
+        link.classList.add("active");
     });
   });
 
@@ -42,8 +44,10 @@
 
     const name = (document.getElementById("name") || {}).value?.trim() || "";
     const email = (document.getElementById("email") || {}).value?.trim() || "";
-    const subject = (document.getElementById("subject") || {}).value?.trim() || "";
-    const message = (document.getElementById("message") || {}).value?.trim() || "";
+    const subject =
+      (document.getElementById("subject") || {}).value?.trim() || "";
+    const message =
+      (document.getElementById("message") || {}).value?.trim() || "";
 
     if (!name || !email || !subject || !message) {
       alert("Please fill in all fields.");
@@ -92,7 +96,8 @@
     }
   });
 })();
-```// filepath: d:\2. WEB DEVELOPMENT CENTER\HTML\CODING-IN-HTML\VND_VP_EDUBE\MODULE-PROJECTS\Module 1 Completion\script.js
+// filepath: d:\2. WEB DEVELOPMENT CENTER\HTML\CODING-IN-HTML\VND_VP_EDUBE\MODULE-PROJECTS\Module 1 Completion\script.js
+
 // ...existing code...
 (function () {
   // SMOOTH SCROLLING FOR NAVIGATION LINKS
@@ -106,9 +111,11 @@
 
   // ADD ACTIVE CLASS TO CURRENT NAV LINK
   window.addEventListener("load", function () {
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const currentPage =
+      window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("nav a").forEach((link) => {
-      if (link.getAttribute("href") === currentPage) link.classList.add("active");
+      if (link.getAttribute("href") === currentPage)
+        link.classList.add("active");
     });
   });
 
@@ -137,8 +144,10 @@
 
     const name = (document.getElementById("name") || {}).value?.trim() || "";
     const email = (document.getElementById("email") || {}).value?.trim() || "";
-    const subject = (document.getElementById("subject") || {}).value?.trim() || "";
-    const message = (document.getElementById("message") || {}).value?.trim() || "";
+    const subject =
+      (document.getElementById("subject") || {}).value?.trim() || "";
+    const message =
+      (document.getElementById("message") || {}).value?.trim() || "";
 
     if (!name || !email || !subject || !message) {
       alert("Please fill in all fields.");
@@ -165,9 +174,6 @@
         if (res.ok) {
           alert("Thanks — your message was sent.");
           contactForm.reset();
-          // optional redirect:
-          // const next = contactForm.querySelector('input[name="_next"]')?.value;
-          // if (next) window.location.href = next;
         } else {
           const data = await res.json().catch(() => ({}));
           alert(data.error || "Submission failed.");
