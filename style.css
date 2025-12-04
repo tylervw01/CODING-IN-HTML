@@ -67,6 +67,10 @@ section {
   margin-bottom: 2rem;
 }
 
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;}
+
 .card {
   background: var(--card-bg);
   padding: 1rem;
